@@ -1,0 +1,82 @@
+:root {
+    --button-bg-color: #616161;
+    --button-fg-color: white;
+    --button-hover-bg-color: #fb8c00;
+    --button-hover-fg-color: black;
+
+    --msg-error-bg-color: #ff8a65;
+    --msg-error-fg-color: black;
+    --msg-success-bg-color: #69f0ae;
+    --msg-success-fg-color: black;
+
+    --bg-color-light-1: #eceff1;
+    --bg-color-light-2: #cfd8dc;
+    --bg-color-light-3: #b0bec5;
+    --bg-color-light-4: #90a4ae;
+    --bg-color-light-5: #78909c;
+    --bg-color-neutral: #607d8b;
+    --bg-color-dark-1: #546e7a;
+    --bg-color-dark-2: #455a64;
+    --bg-color-dark-3: #37474f;
+    --bg-color-dark-4: #263238;
+}
+
+* {
+    font-family: monospace;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+body {
+    text-align: center;
+    background: var(--bg-color-light-4);
+}
+
+span,
+p {
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+select {
+    height: 32px;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    display: inline-block;
+    font-weight: 500;
+    background: var(--bg-color-light-3);
+}
+
+button:focus,
+button:hover,
+i.expand:hover,
+input::file-selector-button:hover {
+    background-color: #fb8c00 !important;
+    color: black !important;
+    cursor: pointer;
+}
+
+input::file-selector-button {
+    font-size: 0.8rem !important;
+}
+
+button {
+    border-radius: 20px;
+    border: none;
+    background-color: var(--bg-color-light-5);
+    color: white;
+    font-weight: 600;
+    height: 40px;
+    width: 100px;
+    font-size: 0.8rem;
+}
+
+textarea {
+    opacity: 0;
+    height: 0;
+    padding: 0;
+}

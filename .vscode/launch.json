@@ -1,0 +1,37 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "address": "0.0.0.0",
+            "localRoot": "${workspaceFolder}",
+            "name": "Remote Debug Render",
+            "port": 9229,
+            "remoteRoot": "/opt/render/project/src",
+            "request": "attach",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "runtimeArgs": [
+                "--inspect-brk"
+            ],
+            "type": "pwa-node"
+        },
+        {
+            "type": "node",
+            "name": "Debug Node.js",
+            "program": "${workspaceFolder}/index.js",
+            "runtimeArgs": [
+                "--inspect-brk"
+            ],
+            "request": "attach",
+            "port": 8888,
+            "address": "0.0.0.0",
+            "restart": true,
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        }
+    ]
+}
